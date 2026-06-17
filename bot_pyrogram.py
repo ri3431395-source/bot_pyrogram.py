@@ -11,6 +11,9 @@ from pyrogram import Client, filters
 from pyrogram.handlers import MessageHandler
 from pyrogram.types import Message
 
+import static_ffmpeg
+static_ffmpeg.add_paths()  # ffmpeg/ffprobe na thakle download kore PATH-e add kore dey
+
 INSERT_AT_SECONDS = 6 * 60
 MAX_TELEGRAM_SEND_MB = 1900
 
